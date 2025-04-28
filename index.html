@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvridTogether - Télécharge l'app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <img class="logo" src="assets/img/LOGO LIGHT.svg" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>contact</button></a>
+    </header>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="left-section">
+            <div class="phone-screen">
+                <img src="assets/img/screendshot_app.png" alt="Screenshot de l'application">
+            </div>
+        </div>
+
+        <div class="right-section">
+            <img id="pht" src="assets/img/LOGO LIGHT.svg" alt="">
+            <div class="headline">Trouve un covoiturage en quelques secondes</div>
+            <div class="subheadline">Fais des rencontres, des trajets et plus avec AvridTogether.</div>
+            <button class="download-button">Télécharger l'APK</button>
+
+            <!-- QR Code Section -->
+            <div class="qr-code-container">
+                <img src="assets/img/qr.png" alt="QR Code" class="qr-code">
+                <p class="qr-description">Get the app: scan the code with your smartphone camera to download the free app</p>
+            </div>
+        </div>
+    </div>
+        <!-- Section Fonctionnalités -->
+        <section id="features" class="features-section">
+            <h2>Fonctionnalités</h2>
+            <div class="features-container">
+        
+                <!-- Feature 1: Covoiturage rapide et facile -->
+                <div class="features-item card">
+                    <i class="fas fa-car feature-icon"></i>
+                    <h3>Covoiturage rapide et facile</h3>
+                    <p>Notre système de recherche instantanée vous aide à trouver rapidement un covoiturage.</p>
+                    <div class="more-details">
+                        <button onclick="expandFeature(this.parentElement)">Plus de détails</button>
+                    </div>
+        
+                    <!-- Détails cachés -->
+                    <div class="feature-details" style="display:none;">
+                        <p>Trouvez un covoiturage en quelques secondes grâce à notre algorithme optimisé pour la rapidité et la précision.</p>
+                        <img src="assets/img/imgrecherche.svg" class="detail-image">
+                    </div>
+                </div>
+        
+                <!-- Feature 2: Rencontres sécurisées -->
+                <div class="features-item card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Rencontres sécurisées</h3>
+                    <p>Profitez d'une expérience de covoiturage sécurisée grâce à nos vérifications d'utilisateurs.</p>
+                    <div class="more-details">
+                        <button onclick="expandFeature(this.parentElement)">Plus de détails</button>
+                    </div>
+        
+                    <!-- Détails cachés -->
+                    <div class="feature-details" style="display:none;">
+                        <p>Chaque utilisateur est vérifié pour garantir votre sécurité pendant vos trajets partagés.</p>
+                        <img src="assets/img/pop up.svg" class="detail-image">
+                    </div>
+                </div>
+        
+                <!-- Feature 3: Notifications en temps réel -->
+                <div class="features-item card">
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Notifications en temps réel</h3>
+                    <p>Recevez des alertes instantanées sur vos trajets et événements.</p>
+                    <div class="more-details">
+                        <button onclick="expandFeature(this.parentElement)">Plus de détails</button>
+                    </div>
+        
+                    <!-- Détails cachés -->
+                    <div class="feature-details" style="display:none;">
+                        <p>Restez informé en temps réel sur vos trajets, covoiturages et changements d'horaires.</p>
+                        <img src="assets/img/paiment.svg" class="detail-image">
+                    </div>
+                </div>
+        
+                <!-- Feature 4: Paiement sécurisé -->
+                <div class="features-item card">
+                    <i class="fa-solid fa-wallet feature-icon"></i>
+                    <h3>Paiement sécurisé</h3>
+                    <p>Effectuez des paiements en toute sécurité en rechargant un crédit sur votre application.</p>
+                    <div class="more-details">
+                        <button onclick="expandFeature(this.parentElement)">Plus de détails</button>
+                    </div>
+        
+                    <!-- Détails cachés -->
+                    <div class="feature-details" style="display:none;">
+                        <p>Notre système de paiement intégré garantit des transactions sûres et rapides directement depuis votre smartphone.</p>
+                        <img src="assets/img/pay.svg" class="detail-image">
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+
+    <!-- Section À propos -->
+    <section id="about" class="about-section">
+        <h2>FAQ À propos de AvridTogether</h2>
+        <div class="faq">
+            <div class="block bl1">
+                <p><strong>Comment fonctionne AvridTogether ?</strong><br>Nous connectons les covoitureurs en temps réel.</p>
+            </div>
+            <div class="block bl2">
+                <p><strong>Est-ce gratuit ?</strong><br>Oui, totalement gratuit.</p>
+            </div>
+            <div class="block bl3">
+                <p><strong>Sur quelles plateformes ?</strong><br>Android, iOS, Web.</p>
+            </div>
+            <div class="block bl4">
+                <p><strong>Comment rejoindre AvridTogether ?</strong><br>Inscrivez-vous gratuitement et commencez à utiliser l'app.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <ul>
+            <li>Yacine Maacha - ay.maacha@ensta.edu.dz</li>
+            <li>Abdelkrim Messaoudi - aa.messaoudi@ensta.edu.dz</li>
+            <li>Sara Hocine - as.hocine@ensta.edu.dz</li>
+            <li>Juba Ibaghouchene - aj.ibaghouchene@ensta.edu.dz</li>
+            <li>Yasmine Tayeb Chrif - ay.tayebcherif@ensta.edu.dz</li>
+        </ul>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Available on iOS, Android, and more devices</p>
+    </footer>
+
+    <script>
+        // Functionality to handle download button click
+        document.querySelector('.download-button').addEventListener('click', function() {
+            alert("Merci de télécharger AvridTogether !");
+        });
+    </script>
+
+</body>
+</html>
