@@ -107,3 +107,46 @@ features.forEach(feature => {
         }
     });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Gestion des boutons "Voir plus de détails"
+    const moreDetailsButtons = document.querySelectorAll('.more-details');
+    const closeDetailsButtons = document.querySelectorAll('.close-details');
+    const featureItems = document.querySelectorAll('.features-item');
+    
+    moreDetailsButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const featureItem = this.closest('.features-item');
+            
+            // Fermer tous les autres détails ouverts
+            featureItems.forEach(item => {
+                if (item !== featureItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Ouvrir le détail actuel
+            featureItem.classList.add('active');
+        });
+    });
+    
+    closeDetailsButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.closest('.features-item').classList.remove('active');
+        });
+    });
+    
+    // Fermer en cliquant en dehors du détail
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.features-item') || e.target.closest('.features-item').classList.contains('active') && !e.target.closest('.feature-details')) {
+            featureItems.forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    });
+});
